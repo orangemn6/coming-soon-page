@@ -1,40 +1,65 @@
-body,
-html {
+body, html {
     height: 100%;
     margin: 0;
+    scrollbar-width: none;
 }
 
-.bgimg {
+*::-webkit-scrollbar {
+    display: none
+}
+
+body {
     background-image: url('https://source.unsplash.com/collection/827743/');
     height: 100%;
     background-position: center;
     background-size: cover;
-    position: relative;
     color: white;
     font-family: "Courier New", Courier, monospace;
     font-size: 25px;
 }
+.bgimg2 {
+    background: inherit;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 42069;
+    font-family: "Courier New", Courier, monospace;
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    filter: invert(1) grayscale(1) contrast(2.35);
+}
 
 .topleft {
-    position: absolute;
     top: 0;
     left: 16px;
 }
 
 .bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
+    margin-left: 16px;
+    margin-top: 150px;
 }
 
 .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 15%;
+    width: 100%;
     text-align: center;
 }
 
+.topleft, .middle, .bottomleft {
+    /*
+    background: inherit;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+
+   filter: invert(1) grayscale(1) contrast(9);
+
+*/
+    position: relative;
+}
 
 hr {
     margin: auto;
