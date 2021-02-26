@@ -40,6 +40,7 @@ body {
 .topleft {
     top: 0;
     left: 16px;
+    font-size: 20px;
 }
 
 .bottomleft > * {
