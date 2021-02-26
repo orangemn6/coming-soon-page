@@ -5,15 +5,8 @@
     <link rel="stylesheet" href="index.css">
     <title>Alpha coming soon</title>
     <script src="bug.js"></script>
-    		<script type='text/javascript'>
-			// default fruit fly bug:
-			new BugController({
-			});
-
-			// default spiders:
-			new SpiderController({
-			});
-		</script>
+    <script src="https://cdn.jsdelivr.net/gh/cukmekerb/keymaster/keymaster.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cmawhorter/keymaster-sequences.js/dist/keymaster-sequences.min.js"></script>
 </head>
 
 <body>
@@ -60,6 +53,15 @@
                 document.getElementById("demo").innerHTML = "HAHA! WE MADE IT!!";
             }
         }, 1000);
+        key.sequence("up up down down left right left right b a", () => {
+            // default fruit fly bug:
+			new BugController({
+			});
+
+			// default spiders:
+			new SpiderController({
+			});
+        })
     </script>
 
 </body>
